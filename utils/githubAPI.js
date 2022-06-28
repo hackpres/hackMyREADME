@@ -4,4 +4,4 @@ function axiosAPI(username) {
     return axios.get(`https://api.github.com/users/${username}`)
 };
 
-module.exports = axiosAPI
+export default axiosAPI;

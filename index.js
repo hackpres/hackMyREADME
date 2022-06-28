@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
-import generateMarkdown from "./utils/generateMarkdown";
-import axiosAPI from "./utils/githubAPI"
-const fs = require('fs');
+import generateMarkdown from "./utils/generateMarkdown.js";
+import axiosAPI from "./utils/githubAPI.js"
+import fs from "fs";
 // TODO: Create an array of questions for user input
 const questions = [
     {
