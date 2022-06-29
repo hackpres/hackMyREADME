@@ -12,6 +12,7 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(results) {
+    console.log("genMark resultsObj" + results.license)
     const contact = () => {
         if (results.emailAdd !== null) {
             return `for questions please contact ${results.github} at ${results.emailAdd}.`;
@@ -22,7 +23,7 @@ function generateMarkdown(results) {
     return `
     # ${results.projectName}.
 
-    ![license badge](https://img.shields.io/static/v1?label=license&message=${results.license[0]}&color=brightgreen&raw=true)(https://choosealicense.com/)
+    ![license badge](https://img.shields.io/static/v1?label=license&message=${encodeURI(results.license)}&color=brightgreen)
 
     ### Description
     ${results.description}
@@ -35,36 +36,42 @@ function generateMarkdown(results) {
 
     ### Table of Contents
 
-    *[Installation](#Installation)
-    *[Usage](#Usage)
-    *[License](#License)
-    *[Tests](#Tests)
-    *[Contributing](#Contributing)
-    *[Questions](#Questions)
+    *[Installation](#installation)
+    *[Usage](#usage)
+    *[License](#license)
+    *[Tests](#tests)
+    *[Contributing](#contributing)
+    *[Questions](#questions)
 
     ### Installation
+    <a name="installation"/>
 
     \`\`\`
     ${results.installation}
     \`\`\`
 
     ### Usage
+    <a name="usage"/>
     ${results.usage}
 
     ### License
+    <a name="license"/>
     ${results.license}
 
     ### Tests
+    <a name="tests"/>
 
     \`\`\`
     ${results.tests}
     \`\`\`
 
     ### Contributing
+    <a name="contributing"/>
     ${results.github} is the primary contributor.
     ${results.contributors}
 
     ### Questions
+    <a name="questions"/>
     ${contact()}
 `;
 }

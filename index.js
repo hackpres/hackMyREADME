@@ -92,9 +92,7 @@ function init() {
         axiosAPI(results.github).then(({data}) => {
             console.log(data);
 
-            let dataObject = {...results, ...data};
-
-            writeToFile(results.name, dataObject);
+            writeToFile(results.projectName, results, data)
         })
     })
 };
