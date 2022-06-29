@@ -23,7 +23,7 @@ function generateMarkdown(results) {
     return `
     # ${results.projectName}.
 
-    ![license badge](https://img.shields.io/static/v1?label=license&message=${encodeURI(results.license)}&color=brightgreen)
+    ![license badge](https://img.shields.io/badge/license-${results.license}-brightgreen)
 
     ### Description
     ${results.description}

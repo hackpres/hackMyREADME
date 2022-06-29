@@ -1,7 +1,7 @@
 
     # readmeGen.
 
-    ![license badge](https://img.shields.io/static/v1?label=license&message=MIT&color=brightgreen)
+    ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
     ### Description
     This project is designed to test the functionality of my CLI README generator.
