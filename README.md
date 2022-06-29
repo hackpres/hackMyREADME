@@ -14,40 +14,38 @@
 
     ### Table of Contents
 
-    *[Installation](#installation)
-    *[Usage](#usage)
-    *[License](#license)
-    *[Tests](#tests)
-    *[Contributing](#contributing)
-    *[Questions](#questions)
+    *[Installation](#Installation)
+    *[Usage](#Usage)
+    *[License](#License)
+    *[Tests](#Tests)
+    *[Contributing](#Contributing)
+    *[Questions](#Questions)
 
-    ### Installation
-    <a name="installation"/>
+    # Installation
 
     ```
     npm i
     ```
 
-    ### Usage
-    <a name="usage"/>
+    # Usage
+
     Install and run this repo directly from your command line! simply type node index.js in the code directory and answer the question prompts!
 
-    ### License
-    <a name="license"/>
+    # License
+
     MIT
 
-    ### Tests
-    <a name="tests"/>
+    # Tests
 
     ```
     npm test
     ```
 
-    ### Contributing
-    <a name="contributing"/>
+    # Contributing
+
     hackpres is the primary contributor.
     
 
-    ### Questions
-    <a name="questions"/>
+    # Questions
+
     for questions please contact hackpres at hackeralexanderp@gmail.com.
