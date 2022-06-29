@@ -11,34 +11,33 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-    const license = encodeURI(data.license);
+function generateMarkdown(results) {
     const contact = () => {
-        if (data.email !== null) {
-            return "for questions please contact ${data.author} at ${data.email}.";
+        if (results.emailAdd !== null) {
+            return `for questions please contact ${results.github} at ${results.emailAdd}.`;
         } else {
-            return "for questions please contact ${data.author}.";
+            return `for questions please contact ${results.github}.`;
         }
     }
     return `
-    # ${data.title}
+    # ${results.projectName}.
 
-    ![license badge](https://img.shields.io/static/v1?label=license&message=${license}&color=brightgreen)(https://choosealicense.com/)
+    ![license badge](https://img.shields.io/static/v1?label=license&message=${results.license[0]}&color=brightgreen&raw=true)(https://choosealicense.com/)
 
     ### Description
-    ${data.description}
+    ${results.description}
 
-    &ensp${data.motivation}
+        ${results.motivation}
 
-    &ensp${data.solution}
+        ${results.solution}
 
-    &ensp${data.learn}
+        ${results.learn}
 
     ### Table of Contents
 
-    *[License](#License)
     *[Installation](#Installation)
     *[Usage](#Usage)
+    *[License](#License)
     *[Tests](#Tests)
     *[Contributing](#Contributing)
     *[Questions](#Questions)
@@ -46,24 +45,24 @@ function generateMarkdown(data) {
     ### Installation
 
     \`\`\`
-    ${data.installation}
+    ${results.installation}
     \`\`\`
 
     ### Usage
-    ${data.usage}
+    ${results.usage}
 
     ### License
-    ${data.license}
+    ${results.license}
 
     ### Tests
 
     \`\`\`
-    ${data.tests}
+    ${results.tests}
     \`\`\`
 
     ### Contributing
-    ${data.author} is the primary contributor.
-    ${data.contributing}
+    ${results.github} is the primary contributor.
+    ${results.contributors}
 
     ### Questions
     ${contact()}

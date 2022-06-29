@@ -8,7 +8,7 @@
 
     &enspThe desire is to provide users with consistent high quality README files for their projects generated right from the command-line by only answering a few questions.
 
-    &enspUnprofessionaly README files often ruin the hard work a developer has invested into thier repo. My aim is to allow developers to generate high quality README files so their repo can get the recognition it deserves.
+    &enspUnprofessional README files often ruin the hard work a developer has invested into thier repo. My aim is to allow developers to quickly and efficiently generate high quality README files so their repo can get the recognition it deserves.
 
     &enspSo many things; using imports instead of require(), exporting work from js files to be envoked in others, etc.
 

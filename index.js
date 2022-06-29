@@ -17,7 +17,12 @@ const questions = [
     },
     {
         type: "input",
-        name: "name",
+        name: "emailAdd",
+        message: "What is your contact email?"
+    },
+    {
+        type: "input",
+        name: "projectName",
         message: "What is the name of your project?"
     },
     {
@@ -83,10 +88,13 @@ function writeToFile(fileName, results, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(results => {
+        console.log(results)
         axiosAPI(results.github).then(({data}) => {
             console.log(data);
 
-            writeToFile(results.name, results, data)
+            let dataObject = {...results, ...data};
+
+            writeToFile(results.name, dataObject);
         })
     })
 };
