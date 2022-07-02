@@ -2,8 +2,9 @@
     # readmeGen.
 
     [![license badge](https://img.shields.io/badge/license-MIT-brightgreen)]
+    ![GitHub](https://img.shields.io/github/license/hackpres/hackMyREADME?color=brightgreen&label=License&logo=GitHub)
 
-    ### Description
+    ## Description
     This project is designed to test the functionality of my CLI README generator.
 
         The desire is to provide users with consistent high quality README files for their projects generated right from the command-line by only answering a few questions.
@@ -21,31 +22,31 @@
     *[Contributing](#Contributing)
     *[Questions](#Questions)
 
-    # Installation
+    ## Installation
 
     ```
     npm i
     ```
 
-    # Usage
+    ## Usage
 
     Install and run this repo directly from your command line! simply type node index.js in the code directory and answer the question prompts!
 
-    # License
+    ## License
 
     MIT
 
-    # Tests
+    ## Tests
 
     ```
     npm test
     ```
 
-    # Contributing
+    ## Contributing
 
     hackpres is the primary contributor.
     
 
-    # Questions
+    ## Questions
 
     for questions please contact hackpres at hackeralexanderp@gmail.com.
