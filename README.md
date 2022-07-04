@@ -1,7 +1,7 @@
 
     # readmeGen.
 
-    [![License](https://img.shields.io/badge/license-mit-blue.svg)](https://github.com/hackpres/hackMyREADME)
+    ![License](https://img.shields.io/badge/license-mit-blue.svg)
 
     ## Description
     This project is designed to test the functionality of my CLI README generator.
