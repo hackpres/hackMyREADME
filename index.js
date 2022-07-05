@@ -43,7 +43,7 @@ const questions = [
     {
         type: "input",
         name: "learn",
-        message: "What, if anything, did you learn from this project?"
+        message: "Talk about anything you may have learned from developing this project."
     },
     {
         type: "checkbox",
@@ -76,8 +76,8 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, results, data) {
-    fs.writeFile(`README${fileName}.md`, generateMarkdown({...results, ...data}), (err) => {
+function writeToFile(results, data) {
+    fs.writeFile(`README.md`, generateMarkdown({...results, ...data}), (err) => {
         if (err) {
             throw err;
         }
@@ -92,7 +92,7 @@ function init() {
         axiosAPI(results.github).then(({data}) => {
             console.log(data);
 
-            writeToFile(results.projectName, results, data)
+            writeToFile(results, data)
         })
     })
 };

@@ -21,58 +21,58 @@ function generateMarkdown(results) {
         }
     }
     return `
-    # ${results.projectName}.
+# ${results.projectName}.
 
-    ![license badge](https://img.shields.io/badge/license-${results.license}-brightgreen)
+![license badge](https://img.shields.io/badge/license-${results.license}-brightgreen)
 
-    ### Description
-    ${results.description}
+### Description
+${results.description}
 
-        ${results.motivation}
+    ${results.motivation}
 
-        ${results.solution}
+    ${results.solution}
 
-        ${results.learn}
+    ${results.learn}
 
-    ### Table of Contents
+### Table of Contents
 
-    *[Installation](#installation)
-    *[Usage](#usage)
-    *[License](#license)
-    *[Tests](#tests)
-    *[Contributing](#contributing)
-    *[Questions](#questions)
+*[Installation](#installation)
+*[Usage](#usage)
+*[License](#license)
+*[Tests](#tests)
+*[Contributing](#contributing)
+*[Questions](#questions)
 
-    ### Installation
-    <a name="installation"/>
+### Installation
+<a name="installation"/>
 
-    \`\`\`
-    ${results.installation}
-    \`\`\`
+\`\`\`
+${results.installation}
+\`\`\`
 
-    ### Usage
-    <a name="usage"/>
-    ${results.usage}
+### Usage
+<a name="usage"/>
+${results.usage}
 
-    ### License
-    <a name="license"/>
-    ${results.license}
+### License
+<a name="license"/>
+${results.license}
 
-    ### Tests
-    <a name="tests"/>
+### Tests
+<a name="tests"/>
 
-    \`\`\`
-    ${results.tests}
-    \`\`\`
+\`\`\`
+${results.tests}
+\`\`\`
 
-    ### Contributing
-    <a name="contributing"/>
-    ${results.github} is the primary contributor.
-    ${results.contributors}
+### Contributing
+<a name="contributing"/>
+${results.github} is the primary contributor.
+${results.contributors}
 
-    ### Questions
-    <a name="questions"/>
-    ${contact()}
+### Questions
+<a name="questions"/>
+${contact()}
 `;
 }
 
