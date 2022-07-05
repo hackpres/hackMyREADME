@@ -15,9 +15,9 @@ function generateMarkdown(results) {
     console.log("genMark resultsObj" + results.license)
     const contact = () => {
         if (results.emailAdd !== null) {
-            return `for questions please contact ${results.github} at ${results.emailAdd}.`;
+            return `for questions please contact ${results.github}<a url="https://github.com/${results.github}" /> at ${results.emailAdd}.`;
         } else {
-            return `for questions please contact ${results.github}.`;
+            return `for questions please contact ${results.github}<a url="https://github.com/${results.github}" />.`;
         }
     }
     return `
@@ -34,14 +34,14 @@ ${results.description}
 
     ${results.learn}
 
-### Table of Contents
+## Table of Contents
 
-*[Installation](#installation)
-*[Usage](#usage)
-*[License](#license)
-*[Tests](#tests)
-*[Contributing](#contributing)
-*[Questions](#questions)
+* **[Installation](#installation)**<br />
+* **[Usage](#usage)**<br />
+* **[License](#license)**<br />
+* **[Tests](#tests)**<br />
+* **[Contributing](#contributing)**<br />
+* **[Questions](#questions)**<br />
 
 ### Installation
 <a name="installation"/>
