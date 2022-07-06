@@ -1,9 +1,9 @@
 
-# TestingOneTwo.
+# TestingThreeFour.
 
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
-### Description
+## Description
 This project is designed to test the functionality of my CLI README generator.
 
     The desire is to provide users with consistent high quality README files for their projects generated right from the command-line by only answering a few questions.
@@ -19,7 +19,7 @@ This project is designed to test the functionality of my CLI README generator.
 * **[License](#license)**<br />
 * **[Tests](#tests)**<br />
 * **[Contributing](#contributing)**<br />
-* **[Questions](#questions)**<br />
+* **[Contact](#contact)**<br />
 
 ### Installation
 <a name="installation"/>
@@ -48,7 +48,7 @@ npm test
 hackpres is the primary contributor.
 
 
-### Questions
-<a name="questions"/>
-for questions please contact <a href="https://github.com/hackpres">hackpres</a> at hackeralexanderp@gmail.com.
-[Contact Image](./images/testImg.png)
+### Contact
+<a name="contact"/>
+for questions please contact <a href="https://github.com/hackpres">hackpres</a> at hackeralexanderp@gmail.com.<br/>
+![Contact Image](/Users/hackap/gt-bootcamp/homework/hackMyREADME/images/testImg.png?raw=true)

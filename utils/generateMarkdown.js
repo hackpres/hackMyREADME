@@ -22,7 +22,7 @@ function generateMarkdown(results) {
     }
     const contactImg = () => {
         if (results.contactImg !== null) {
-            return `[Contact Image](${results.contactImg})`
+            return `![Contact Image](${results.contactImg}?raw=true)`
         }
     }
     return `
@@ -30,7 +30,7 @@ function generateMarkdown(results) {
 
 ![license badge](https://img.shields.io/badge/license-${results.license}-brightgreen)
 
-### Description
+## Description
 ${results.description}
 
     ${results.motivation}
@@ -46,7 +46,7 @@ ${results.description}
 * **[License](#license)**<br />
 * **[Tests](#tests)**<br />
 * **[Contributing](#contributing)**<br />
-* **[Questions](#questions)**<br />
+* **[Contact](#contact)**<br />
 
 ### Installation
 <a name="installation"/>
@@ -75,9 +75,9 @@ ${results.tests}
 ${results.github} is the primary contributor.
 ${results.contributors}
 
-### Questions
-<a name="questions"/>
-${contact()}
+### Contact
+<a name="contact"/>
+${contact()}<br/>
 ${contactImg()}
 `;
 }
