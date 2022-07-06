@@ -1,5 +1,5 @@
 
-# TESTING.
+# TestingOneTwo.
 
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -25,16 +25,16 @@ This project is designed to test the functionality of my CLI README generator.
 <a name="installation"/>
 
 ```
-You will need to use the "npm i" command from your CLI terminal
+npm i
 ```
 
 ### Usage
 <a name="usage"/>
-Install and run this repo directly from your command line! Simply type "node index.js" in the code directory and answer the question prompts!
+Install and run this repo directly from your command line! simply type node index.js in the code directory and answer the question prompts!
 
 ### License
 <a name="license"/>
-MIT
+<a href="https://choosealicense.com/licenses/MIT">MIT</a>
 
 ### Tests
 <a name="tests"/>
@@ -50,4 +50,5 @@ hackpres is the primary contributor.
 
 ### Questions
 <a name="questions"/>
-for questions please contact hackpres<a url="https://github.com/hackpres" /> at hackeralexanderp@gmail.com.
+for questions please contact <a href="https://github.com/hackpres">hackpres</a> at hackeralexanderp@gmail.com.
+[Contact Image](./images/testImg.png)

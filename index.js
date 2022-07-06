@@ -3,6 +3,9 @@ import inquirer from "inquirer";
 import generateMarkdown from "./utils/generateMarkdown.js";
 import axiosAPI from "./utils/githubAPI.js"
 import fs from "fs";
+
+const contactPhoto = [];
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -14,6 +17,20 @@ const questions = [
         type: "input",
         name: "github",
         message: "What is your gihub username?"
+    },
+    {
+        type: "confirm",
+        name: "confirmImg",
+        message: "Would you like to add an image to your contact section?",
+        default: false,
+    },  
+    {
+        type: "input",
+        name: "contactImg",
+        message: "Provide the file path for your desired image.",
+        when: function(answers) {
+            return !!answers.confirmImg
+        },
     },
     {
         type: "input",
