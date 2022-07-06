@@ -22,7 +22,7 @@ function generateMarkdown(results) {
     }
     const contactImg = () => {
         if (results.contactImg !== null) {
-            return `![Contact Image](${results.contactImg}?raw=true)`
+            return `<img src="${results.contactImg} width="300"/>`
         }
     }
     return `

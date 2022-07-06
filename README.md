@@ -1,5 +1,5 @@
 
-# TestingThreeFour.
+# TestingFiveSix.
 
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -51,4 +51,4 @@ hackpres is the primary contributor.
 ### Contact
 <a name="contact"/>
 for questions please contact <a href="https://github.com/hackpres">hackpres</a> at hackeralexanderp@gmail.com.<br/>
-![Contact Image](/Users/hackap/gt-bootcamp/homework/hackMyREADME/images/testImg.png?raw=true)
+<img src="./images/testImg.png width="300"/>
