@@ -23,26 +23,36 @@ function generateMarkdown(results) {
     const contactImg = () => {
         if (results.contactImg !== null) {
             return `<img src="${results.contactImg}" width="300"/>`
+        } else {
+            return ""
         }
     }
     const descriptonImg = () => {
         if (results.descriptionImg !== null) {
             return `<img src="${results.descriptionImg}" width="800"/>`
+        } else {
+            return ""
         }
     }
     const additionalDescriptionImg = () => {
         if (results.descriptionImg2 !== null) {
             return `<img src="${results.descriptionImg2}" width="800"/>`
+        } else {
+            return ""
         }
     }
     const usageImg = () => {
         if (results.usageImg !== null) {
             return `<img src="${results.usageImg}" width="800"/>`
+        } else {
+            return ""
         }
     }
     const additionalUsageImg = () => {
         if (results.usageImg2 !== null) {
             return `<img src="${results.usageImg2}" width="800"/>`
+        } else {
+            return ""
         }
     }
     return `
