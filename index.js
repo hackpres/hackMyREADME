@@ -116,7 +116,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "UsageImg",
+        name: "usageImg",
         message: "Provide the file path for your desired image.",
         when: function(answers) {
             return !!answers.confirmUsageImg
@@ -130,7 +130,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "UsageImg2",
+        name: "usageImg2",
         message: "Provide the file path for your desired image.",
         when: function(answers) {
             return !!answers.additionalUsageImg

@@ -27,22 +27,22 @@ function generateMarkdown(results) {
     }
     const descriptonImg = () => {
         if (results.descriptionImg !== null) {
-            return `<img src="${results.descriptionImg}" width="300"/>`
+            return `<img src="${results.descriptionImg}" width="800"/>`
         }
     }
     const additionalDescriptionImg = () => {
         if (results.descriptionImg2 !== null) {
-            return `<img src="${results.descriptionImg2}" width="300"/>`
+            return `<img src="${results.descriptionImg2}" width="800"/>`
         }
     }
     const usageImg = () => {
         if (results.usageImg !== null) {
-            return `<img src="${results.usageImg}" width="300"/>`
+            return `<img src="${results.usageImg}" width="800"/>`
         }
     }
     const additionalUsageImg = () => {
         if (results.usageImg2 !== null) {
-            return `<img src="${results.usageImg2}" width="300"/>`
+            return `<img src="${results.usageImg2}" width="800"/>`
         }
     }
     return `
@@ -59,7 +59,7 @@ ${results.description}
 
     ${results.learn}
 
-${descriptonImg()}
+${descriptonImg()}<br/>
 ${additionalDescriptionImg()}
 
 ## Table of Contents
@@ -80,9 +80,9 @@ ${results.installation}
 
 ### Usage
 <a name="usage"/>
-${results.usage}
+${results.usage}<br/>
 
-${usageImg()}
+${usageImg()}<br/>
 ${additionalUsageImg()}
 
 ### License

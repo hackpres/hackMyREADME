@@ -12,8 +12,8 @@ This project is designed to test the functionality of my CLI README generator.
 
     So many things; using imports instead of require(), exporting work from js files to be envoked in others, utilizing when: in inquirer to only ask questions based on previous user answers, etc.
 
-<img src="./images/description.png" width="300"/>
-<img src="./images/descriptionCode.png" width="300"/>
+<img src="./images/descriptionCode.png" width="800"/><br/>
+<img src="undefined" width="800"/>
 
 ## Table of Contents
 
@@ -33,10 +33,10 @@ npm i
 
 ### Usage
 <a name="usage"/>
-Install and run this repo directly from your command line! simply type "node index.js" in the code directory to run the file in node, then answer the question prompts!
+Install and run this repo directly from your command line! simply type "node index.js" in the code directory to run the file in node, then answer the question prompts!<br/>
 
-<img src="undefined" width="300"/>
-<img src="undefined" width="300"/>
+<img src="./images/usage.png" width="800"/><br/>
+<img src="./images/usageCode.png" width="800"/>
 
 ### License
 <a name="license"/>
