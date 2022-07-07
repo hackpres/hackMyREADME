@@ -21,35 +21,35 @@ function generateMarkdown(results) {
         }
     }
     const contactImg = () => {
-        if (results.contactImg !== null) {
+        if (results.contactImg !== undefined) {
             return `<img src="${results.contactImg}" width="300"/>`
         } else {
             return ""
         }
     }
     const descriptonImg = () => {
-        if (results.descriptionImg !== null) {
+        if (results.descriptionImg !== undefined) {
             return `<img src="${results.descriptionImg}" width="800"/>`
         } else {
             return ""
         }
     }
     const additionalDescriptionImg = () => {
-        if (results.descriptionImg2 !== null) {
+        if (results.descriptionImg2 !== undefined) {
             return `<img src="${results.descriptionImg2}" width="800"/>`
         } else {
             return ""
         }
     }
     const usageImg = () => {
-        if (results.usageImg !== null) {
+        if (results.usageImg !== undefined) {
             return `<img src="${results.usageImg}" width="800"/>`
         } else {
             return ""
         }
     }
     const additionalUsageImg = () => {
-        if (results.usageImg2 !== null) {
+        if (results.usageImg2 !== undefined) {
             return `<img src="${results.usageImg2}" width="800"/>`
         } else {
             return ""
@@ -97,7 +97,7 @@ ${additionalUsageImg()}
 
 ### License
 <a name="license"/>
-<a href="https://choosealicense.com/licenses/${results.license}">${results.license}</a>
+<a href="https://choosealicense.com/licenses">${results.license}</a>
 
 ### Tests
 <a name="tests"/>

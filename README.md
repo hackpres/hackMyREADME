@@ -13,7 +13,7 @@ This project is designed to test the functionality of my CLI README generator.
     So many things; using imports instead of require(), exporting work from js files to be envoked in others, utilizing when: in inquirer to only ask questions based on previous user answers, etc.
 
 <img src="./images/descriptionCode.png" width="800"/><br/>
-<img src="undefined" width="800"/>
+
 
 ## Table of Contents
 
@@ -40,7 +40,7 @@ Install and run this repo directly from your command line! simply type "node ind
 
 ### License
 <a name="license"/>
-<a href="https://choosealicense.com/licenses/MIT">MIT</a>
+<a href="https://choosealicense.com/licenses">MIT</a>
 
 ### Tests
 <a name="tests"/>
