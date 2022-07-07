@@ -22,7 +22,27 @@ function generateMarkdown(results) {
     }
     const contactImg = () => {
         if (results.contactImg !== null) {
-            return `<img src="${results.contactImg} width="300"/>`
+            return `<img src="${results.contactImg}" width="300"/>`
+        }
+    }
+    const descriptonImg = () => {
+        if (results.descriptionImg !== null) {
+            return `<img src="${results.descriptionImg}" width="300"/>`
+        }
+    }
+    const additionalDescriptionImg = () => {
+        if (results.descriptiontImg2 !== null) {
+            return `<img src="${results.descriptiontImg2}" width="300"/>`
+        }
+    }
+    const usageImg = () => {
+        if (results.usageImg !== null) {
+            return `<img src="${results.usageImg}" width="300"/>`
+        }
+    }
+    const additionalUsageImg = () => {
+        if (results.usagetImg2 !== null) {
+            return `<img src="${results.usagetImg2}" width="300"/>`
         }
     }
     return `
@@ -38,6 +58,9 @@ ${results.description}
     ${results.solution}
 
     ${results.learn}
+
+${descriptonImg()}
+${additionalDescriptionImg()}
 
 ## Table of Contents
 
@@ -58,6 +81,9 @@ ${results.installation}
 ### Usage
 <a name="usage"/>
 ${results.usage}
+
+${usageImg()}
+${additionalUsageImg()}
 
 ### License
 <a name="license"/>

@@ -4,19 +4,19 @@ import generateMarkdown from "./utils/generateMarkdown.js";
 import axiosAPI from "./utils/githubAPI.js"
 import fs from "fs";
 
-const contactPhoto = [];
+const descriptionPhoto = [];
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: "input",
-        name: "author",
-        message: "What is your name?"
+        name: "github",
+        message: "What is your gihub username?"
     },
     {
         type: "input",
-        name: "github",
-        message: "What is your gihub username?"
+        name: "emailAdd",
+        message: "What is your contact email?"
     },
     {
         type: "confirm",
@@ -34,13 +34,8 @@ const questions = [
     },
     {
         type: "input",
-        name: "emailAdd",
-        message: "What is your contact email?"
-    },
-    {
-        type: "input",
         name: "projectName",
-        message: "What is the name of your project?"
+        message: "What is the name of your project/repo?"
     },
     {
         type: "input",
@@ -61,6 +56,34 @@ const questions = [
         type: "input",
         name: "learn",
         message: "Talk about anything you may have learned from developing this project."
+    },
+    {
+        type: "confirm",
+        name: "confirmDescriptionImg",
+        message: "Would you like to add an image or screenshot to your description section?",
+        default: false
+    },
+    {
+        type: "input",
+        name: "descriptiontImg",
+        message: "Provide the file path for your desired image.",
+        when: function(answers) {
+            return !!answers.confirmDescriptionImg
+        },
+    },    
+    {
+        type: "confirm",
+        name: "additionalDescriptionImg",
+        message: "Would you like to add an additional image or screenshot to your description section?",
+        default: false
+    },
+    {
+        type: "input",
+        name: "descriptiontImg2",
+        message: "Provide the file path for your desired image.",
+        when: function(answers) {
+            return !!answers.additionalDescriptionImg
+        },
     },
     {
         type: "checkbox",
@@ -86,13 +109,41 @@ const questions = [
         message: "What info does a user need to know to effectively utilize this repo?"
     },
     {
+        type: "confirm",
+        name: "confirmUsageImg",
+        message: "Would you like to add an image or screenshot to your Usage section?",
+        default: false
+    },
+    {
+        type: "input",
+        name: "UsageImg",
+        message: "Provide the file path for your desired image.",
+        when: function(answers) {
+            return !!answers.confirmUsageImg
+        },
+    },    
+    {
+        type: "confirm",
+        name: "additionalUsageImg",
+        message: "Would you like to add an additional image or screenshot to your Usage section?",
+        default: false
+    },
+    {
+        type: "input",
+        name: "UsageImg2",
+        message: "Provide the file path for your desired image.",
+        when: function(answers) {
+            return !!answers.additionalUsageImg
+        },
+    },
+    {
         type: "input",
         name: "contributors",
         message: "Who else is contributing to this repo?"
     }
 ];
 
-// TODO: Create a function to write README file
+// write README file
 function writeToFile(results, data) {
     fs.writeFile(`README.md`, generateMarkdown({...results, ...data}), (err) => {
         if (err) {
@@ -102,7 +153,7 @@ function writeToFile(results, data) {
     });
 };
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
     inquirer.prompt(questions).then(results => {
         console.log(results)
@@ -114,5 +165,5 @@ function init() {
     })
 };
 
-// Function call to initialize app
+// call to initialize app
 init();

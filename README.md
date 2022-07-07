@@ -1,5 +1,5 @@
 
-# TestingFiveSix.
+# hackMyREADME.
 
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -8,9 +8,12 @@ This project is designed to test the functionality of my CLI README generator.
 
     The desire is to provide users with consistent high quality README files for their projects generated right from the command-line by only answering a few questions.
 
-    Unprofessional README files often ruin the hard work a developer has invested into thier repo. My aim is to allow developers to quickly and efficiently generate high quality README files so their repo can get the recognition it deserves.
+    Unprofessional README files often ruin the hard work a developer has invested in thier repos. The aim of hackMyREADME is to allow developers to quickly and efficiently generate high quality README files so their repos get the recognition they deserve.
 
-    So many things; using imports instead of require(), exporting work from js files to be envoked in others, etc.
+    So many things; using imports instead of require(), exporting work from js files to be envoked in others, utilizing when: in inquirer to only ask questions based on previous user answers, etc.
+
+<img src="undefined" width="300"/>
+<img src="./images/descriptionCode.png" width="300"/>
 
 ## Table of Contents
 
@@ -30,7 +33,10 @@ npm i
 
 ### Usage
 <a name="usage"/>
-Install and run this repo directly from your command line! simply type node index.js in the code directory and answer the question prompts!
+Install and run this repo directly from your command line! simply type "node index.js" in the code directory to run the file in node, then answer the question prompts!
+
+<img src="undefined" width="300"/>
+<img src="undefined" width="300"/>
 
 ### License
 <a name="license"/>
@@ -51,4 +57,4 @@ hackpres is the primary contributor.
 ### Contact
 <a name="contact"/>
 for questions please contact <a href="https://github.com/hackpres">hackpres</a> at hackeralexanderp@gmail.com.<br/>
-<img src="./images/testImg.png width="300"/>
+<img src="./images/hackpres.png" width="300"/>

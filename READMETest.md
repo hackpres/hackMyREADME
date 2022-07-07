@@ -8,9 +8,9 @@
 
     &enspThe desire is to provide users with consistent high quality README files for their projects generated right from the command-line by only answering a few questions.
 
-    &enspUnprofessional README files often ruin the hard work a developer has invested into thier repo. My aim is to allow developers to quickly and efficiently generate high quality README files so their repo can get the recognition it deserves.
+    &enspUnprofessional README files often ruin the hard work a developer has invested in thier repos. The aim of hackMyREADME is to allow developers to quickly and efficiently generate high quality README files so their repos get the recognition they deserve.
 
-    &enspSo many things; using imports instead of require(), exporting work from js files to be envoked in others, etc.
+    &enspSo many things; using imports instead of require(), exporting work from js files to be envoked in others, utilizing when: in inquirer to only ask questions based on previous user answers, etc.
 
     ### Table of Contents
 
@@ -28,7 +28,7 @@
     ```
 
     ### Usage
-    Install and run this repo directly from your command line! simply type node index.js in the code directory and answer the question prompts!
+    Install and run this repo directly from your command line! simply type "node index.js" in the code directory to run the file in node, then answer the question prompts!
 
     ### License
     
