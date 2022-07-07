@@ -65,7 +65,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "descriptiontImg",
+        name: "descriptionImg",
         message: "Provide the file path for your desired image.",
         when: function(answers) {
             return !!answers.confirmDescriptionImg
@@ -79,7 +79,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "descriptiontImg2",
+        name: "descriptionImg2",
         message: "Provide the file path for your desired image.",
         when: function(answers) {
             return !!answers.additionalDescriptionImg

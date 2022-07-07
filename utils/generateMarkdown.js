@@ -31,8 +31,8 @@ function generateMarkdown(results) {
         }
     }
     const additionalDescriptionImg = () => {
-        if (results.descriptiontImg2 !== null) {
-            return `<img src="${results.descriptiontImg2}" width="300"/>`
+        if (results.descriptionImg2 !== null) {
+            return `<img src="${results.descriptionImg2}" width="300"/>`
         }
     }
     const usageImg = () => {
@@ -41,8 +41,8 @@ function generateMarkdown(results) {
         }
     }
     const additionalUsageImg = () => {
-        if (results.usagetImg2 !== null) {
-            return `<img src="${results.usagetImg2}" width="300"/>`
+        if (results.usageImg2 !== null) {
+            return `<img src="${results.usageImg2}" width="300"/>`
         }
     }
     return `

@@ -12,7 +12,7 @@ This project is designed to test the functionality of my CLI README generator.
 
     So many things; using imports instead of require(), exporting work from js files to be envoked in others, utilizing when: in inquirer to only ask questions based on previous user answers, etc.
 
-<img src="undefined" width="300"/>
+<img src="./images/description.png" width="300"/>
 <img src="./images/descriptionCode.png" width="300"/>
 
 ## Table of Contents
