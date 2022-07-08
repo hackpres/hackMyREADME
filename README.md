@@ -4,7 +4,7 @@
 ![license badge](https://img.shields.io/badge/license-mit-brightgreen)
 
 ## Description
-hackMyREADME is a simple CLI README.md generator application.
+hackMyREADME is a simple CLI README generation application
 
     The desire is to provide developers with a resource for creating consistent high quality README files for their repos.
 
@@ -35,7 +35,7 @@ npm i
 <a name="usage"/>
 Install and run hackMyREADME directly from your command-line. After installation navigate to the file path for this code directory and simply type "node index.js" in your command-line. Then answer the question prompts to generate your professional README!<br/>
 
-<img src="./images/usage.png" width="800"/><br/>
+<img src="./images/usage.pne" width="800"/><br/>
 <img src="./images/usageCode.png" width="800"/>
 
 ### License
