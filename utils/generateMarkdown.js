@@ -55,6 +55,14 @@ function generateMarkdown(results) {
             return ""
         }
     }
+    const licenseLink = () => {
+        if (results.license === "none") {
+            return "This repo is not covered by any license."
+        } else {
+            return `<a href="https://choosealicense.com/licenses/${results.license}/">${results.license}</a><br/>
+            For more information on the coverage of this license please click on the link above.`
+        }
+    }
     return `
 # ${results.projectName}.
 
@@ -97,7 +105,8 @@ ${additionalUsageImg()}
 
 ### License
 <a name="license"/>
-<a href="https://choosealicense.com/licenses">${results.license}</a>
+
+${licenseLink()}
 
 ### Tests
 <a name="tests"/>
