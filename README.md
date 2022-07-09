@@ -5,7 +5,7 @@
 
 ## Demo Video
 
-<a href="https://drive.google.com/file/d/1N5779KObi1ycwOeehfnNWdrp-gZArT7N/view" title="hackMyREADME Demo"><img src="./images/videoDemoScreenshot" alt="Still frame from Demo Video" /></a>
+<a href="https://drive.google.com/file/d/1N5779KObi1ycwOeehfnNWdrp-gZArT7N/view" title="hackMyREADME Demo"><img src="./images/videoDemoScreenshot.png" alt="Still frame from Demo Video" /></a>
 
 ## Description
 hackMyREADME is a simple CLI README.md generator application.
