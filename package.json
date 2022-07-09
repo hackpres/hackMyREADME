@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/hackpres/hackMyREADME#readme",
   "dependencies": {
     "axios": "^0.27.2",
-    "inquirer": "^9.0.0"
+    "inquirer": "^9.0.0",
+    "jest": "^28.1.2"
   }
 }
